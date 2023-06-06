@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       <Section id="section1" bgImage={bg}>
-        <div className="h-screen text-white flex flex-col justify-center items-center sm:items-start space-y-4 mb-[90px]">
+        <div className="h-screen text-white flex flex-col justify-center items-center lg:items-start lg:ml-64 space-y-4">
           <h1
             className="text-5xl sm:text-8xl font-bold"
             style={{
@@ -43,25 +43,27 @@ function App() {
             SPACE
           </h1>
           <h2 className="text-2xl sm:text-3xl font-medium">Research Center</h2>
-          <p className="italic text-base text-center">
+          <p className="italic text-sm text-center">
             An international space research organisation that involves
             discovering new space things
           </p>
-          <input
-            type="text"
-            placeholder="Enter a valid email address"
-            className="py-[10px] px-3 rounded-none focus:border-black w-[292px] sm:w-[400px]"
-          />
-          <button className="bg-[#f8cb8a] py-[10px] px-[30px] text-black w-[292px] sm:w-[400px]">
-            Submit
-          </button>
+          <div className="flex flex-wrap items-center justify-center sm:justify-start">
+            <input
+              type="text"
+              placeholder="Enter a valid email address"
+              className="py-[0.625rem] px-3 rounded-none focus:border-black w-[292px] sm:w-[400px] text-black"
+            />
+            <button className="bg-[#f8cb8a] py-[10px] px-[10px] text-black w-[292px] sm:w-[100px] mt-2 sm:mt-0 sm:ml-4">
+              Submit
+            </button>
+          </div>
         </div>
       </Section>
 
-      <Section id="section2">
-        <div className="h-[750px] text-black flex flex-col items-center space-y-5 mx-[50px] ">
+      {/* <Section id="section2">
+        <div className="h-[46.875rem] text-black flex flex-col items-center space-y-5 mx-[50px] sm:h-[200px] sm:justify-center">
           <h2
-            className="text-2xl"
+            className="text-2xl text-center"
             style={{
               fontFamily: "'Roboto', sans-serif",
             }}
@@ -87,10 +89,10 @@ function App() {
             Space Center and a Smithsonian Affiliate.
           </p>
         </div>
-      </Section>
+      </Section> */}
 
-      <Section id="section3">
-        <div className="h-[1200px] text-black flex flex-col items-center justify-center mx-[50px] space-y-4">
+      {/* <Section id="section3">
+        <div className="h-[1000px] text-black flex flex-col items-center justify-center mx-[50px] space-y-4">
           <img
             src={image1}
             alt="image1"
@@ -122,87 +124,87 @@ function App() {
             professors of economics at the University of Houston – Clear Lake.
           </p>
         </div>
-      </Section>
+      </Section> */}
 
-      <Section id="section4">
-        <div className="h-[700px] flex flex-col items-center justify-center mx-[50px] my-[50px] space-y-7 bg-white">
-          <img
-            src={image2}
-            alt="image2"
-            className="object-cover rounded-[5px]"
-          />
-          <p className="text-center italic text-black">
-            There is always something new at Space Center Houston with an
-            amazing array of traveling exhibits and astounding events.
-          </p>
-          <img
-            src={image3}
-            alt="image3"
-            className="object-cover rounded-[5px]"
-          />
-          <p className="text-center italic text-black">
-            Space Center Houston has the world’s largest collection of moon
-            rocks and lunar samples for public view.
-          </p>
-        </div>
-      </Section>
+        {/* <Section id="section4">
+          <div className="h-[700px] flex flex-col items-center justify-center mx-[50px] my-[50px] space-y-7 bg-white">
+            <img
+              src={image2}
+              alt="image2"
+              className="object-cover rounded-[5px]"
+            />
+            <p className="text-center italic text-black">
+              There is always something new at Space Center Houston with an
+              amazing array of traveling exhibits and astounding events.
+            </p>
+            <img
+              src={image3}
+              alt="image3"
+              className="object-cover rounded-[5px]"
+            />
+            <p className="text-center italic text-black">
+              Space Center Houston has the world’s largest collection of moon
+              rocks and lunar samples for public view.
+            </p>
+          </div>
+        </Section>
 
-      <Section id="section5" bgImage={star1}>
-        <div className="h-[860px] text-white flex flex-col items-center space-y-4">
-          <h2
-            className="text-2xl font-medium mt-[150px]"
-            style={{
-              fontFamily: "'Roboto', sans-serif",
-            }}
-          >
-            Certified Autism Center
-          </h2>
-          <h1
-            className="text-5xl font-bold text-center"
-            style={{
-              fontFamily: "'Roboto', sans-serif",
-            }}
-          >
-            EDUCATIONAL COMPLEX AND SPACE MUSEUM
-          </h1>
-          <div className="w-16 h-3 bg-[#f8cb8a]"></div>
-          <p className="italic text-center p-5">
-            The certification process involves rigorous training for staff,
-            inspections and improvements that enable Space Center Houston to
-            better welcome and accommodate guests with autism spectrum disorder
-            and other sensory and cognitive challenges. Space Center Houston was
-            always welcoming to guests with special needs,” McMahon said. “I was
-            able to help support that commitment by leading informal training
-            for my instructor colleagues on working with guests with
-            disabilities, including autism.
-          </p>
-        </div>
-      </Section>
+        <Section id="section5" bgImage={star1}>
+          <div className="h-[860px] text-white flex flex-col items-center space-y-4">
+            <h2
+              className="text-2xl font-medium mt-[150px]"
+              style={{
+                fontFamily: "'Roboto', sans-serif",
+              }}
+            >
+              Certified Autism Center
+            </h2>
+            <h1
+              className="text-5xl font-bold text-center"
+              style={{
+                fontFamily: "'Roboto', sans-serif",
+              }}
+            >
+              EDUCATIONAL COMPLEX AND SPACE MUSEUM
+            </h1>
+            <div className="w-16 h-3 bg-[#f8cb8a]"></div>
+            <p className="italic text-center p-5">
+              The certification process involves rigorous training for staff,
+              inspections and improvements that enable Space Center Houston to
+              better welcome and accommodate guests with autism spectrum disorder
+              and other sensory and cognitive challenges. Space Center Houston was
+              always welcoming to guests with special needs,” McMahon said. “I was
+              able to help support that commitment by leading informal training
+              for my instructor colleagues on working with guests with
+              disabilities, including autism.
+            </p>
+          </div>
+        </Section>
 
-      <Section id="section6" bgImage={image4}>
-        <div className="h-[657px] text-white flex flex-col items-center space-y-10">
-          <h1
-            className="text-5xl font-bold text-center mt-20"
-            style={{
-              fontFamily: "'Roboto', sans-serif",
-            }}
-          >
-            EMPIRE STATE BUILDING
-          </h1>
-          <h2 className="text-center font-medium">
-            350 5th Ave, New York, NY 10118 1 212-736-3100 contacts@esbnyc.com
-          </h2>
-          <img src={logo} alt="logo" className="w-[250px]" />
-        </div>
-      </Section>
+        <Section id="section6" bgImage={image4}>
+          <div className="h-[657px] text-white flex flex-col items-center space-y-10">
+            <h1
+              className="text-5xl font-bold text-center mt-20"
+              style={{
+                fontFamily: "'Roboto', sans-serif",
+              }}
+            >
+              EMPIRE STATE BUILDING
+            </h1>
+            <h2 className="text-center font-medium">
+              350 5th Ave, New York, NY 10118 1 212-736-3100 contacts@esbnyc.com
+            </h2>
+            <img src={logo} alt="logo" className="w-[250px]" />
+          </div>
+        </Section>
 
-      <Section id="section7">
-        <div className="h-[50px] bg-[#2F2B3A] text-white flex flex-col justify-center items-center space-y-10">
-          <h1 className="font-bold text-center">
-            Ghijselings Loïc - 2023 © All rights reserved
-          </h1>
-        </div>
-      </Section>
+        <Section id="section7">
+          <div className="h-[50px] bg-[#2F2B3A] text-white flex flex-col justify-center items-center space-y-10">
+            <h1 className="font-bold text-center">
+              Ghijselings Loïc - 2023 © All rights reserved
+            </h1>
+          </div>
+        </Section> */}
     </>
   );
 }
