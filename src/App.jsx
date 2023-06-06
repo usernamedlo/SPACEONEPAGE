@@ -33,26 +33,26 @@ function App() {
   return (
     <>
       <Section id="section1" bgImage={bg}>
-        <div className="h-[907px] text-white flex flex-col justify-center items-center space-y-4 mb-[90px]">
+        <div className="h-screen text-white flex flex-col justify-center items-center sm:items-start space-y-4 mb-[90px]">
           <h1
-            className="text-8xl font-bold"
+            className="text-5xl sm:text-8xl font-bold"
             style={{
               fontFamily: "'Roboto', sans-serif",
             }}
           >
             SPACE
           </h1>
-          <h2 className="text-2xl font-medium">Research Center</h2>
+          <h2 className="text-2xl sm:text-3xl font-medium">Research Center</h2>
           <p className="italic text-base text-center">
-            An international space research organisation that involve to
-            discover the new space things
+            An international space research organisation that involves
+            discovering new space things
           </p>
           <input
             type="text"
             placeholder="Enter a valid email address"
-            class="py-[10px] px-3 rounded-none focus:border-black w-[292px]"
+            className="py-[10px] px-3 rounded-none focus:border-black w-[292px] sm:w-[400px]"
           />
-          <button className="bg-[#f8cb8a] py-[10px] px-[30px] text-black w-[292px]">
+          <button className="bg-[#f8cb8a] py-[10px] px-[30px] text-black w-[292px] sm:w-[400px]">
             Submit
           </button>
         </div>
@@ -195,8 +195,8 @@ function App() {
           <img src={logo} alt="logo" className="w-[250px]" />
         </div>
       </Section>
-      
-      <Section id="section7" >
+
+      <Section id="section7">
         <div className="h-[50px] bg-[#2F2B3A] text-white flex flex-col justify-center items-center space-y-10">
           <h1 className="font-bold text-center">
             Ghijselings Loïc - 2023 © All rights reserved
