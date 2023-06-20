@@ -11,3 +11,16 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+@media screen and (max-width: 1024px) {
+    .mobile-rounded {
+      border-radius: 5px !important;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .laptop-rounded {
+      border-radius: 5px 0 0 5px;
+    }
+  }
+  
+

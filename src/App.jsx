@@ -20,7 +20,7 @@ const Section = ({ id, children, bgImage }) => {
           isMobile && id === "section1" ? "55em center" : "center",
         backgroundColor: "#0b013c",
       }
-    : {};
+    : { backgroundColor: "#FEFAF3" };
 
   return (
     <div id={id} style={sectionStyle}>
@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       <Section id="section1" bgImage={bg}>
-        <div className="h-screen text-white flex flex-col justify-center items-center lg:items-start lg:ml-64 space-y-4">
+        <div className="h-screen text-white flex flex-col justify-center items-center sm:[44.875rem] lg:items-start lg:ml-64 space-y-4">
           <h1
             className="text-5xl sm:text-8xl font-bold"
             style={{
@@ -60,8 +60,8 @@ function App() {
         </div>
       </Section>
 
-      {/* <Section id="section2">
-        <div className="h-[46.875rem] text-black flex flex-col items-center space-y-5 mx-[50px] sm:h-[200px] sm:justify-center">
+      <Section id="section2">
+        <div className="h-[46.875rem] text-black flex flex-col items-center justify-center space-y-5 mx-12 sm:mx-[10.65rem] sm:h-[28.938rem]">
           <h2
             className="text-2xl text-center"
             style={{
@@ -71,15 +71,15 @@ function App() {
             Fun and engaging education
           </h2>
           <h1
-            className="text-5xl font-black text-[#0b013c] text-center"
+            className="text-5xl font-extrabold text-[#0b013c] text-center"
             style={{
               fontFamily: "'Roboto', sans-serif",
             }}
           >
             ABOUT THE EDUCATION FOUNDATION
           </h1>
-          <div className="w-[50px] h-2.5 bg-[#f8cb8a]"></div>
-          <p className="text-center italic text-gray-500 text-base font-medium">
+          <div className="w-[50px] lg:w-[100px] h-2.5 bg-[#f8cb8a]"></div>
+          <p className="text-center italic text-gray-500 font-medium sm:w-[55.563rem]">
             The Manned Space Flight Education Foundation inonprofit educational
             foundation offering extensive science education programs and a space
             museum. The cornerstone of its education mission is Space Center
@@ -89,44 +89,47 @@ function App() {
             Space Center and a Smithsonian Affiliate.
           </p>
         </div>
-      </Section> */}
+      </Section>
 
-      {/* <Section id="section3">
-        <div className="h-[1000px] text-black flex flex-col items-center justify-center mx-[50px] space-y-4">
+      <Section id="section3">
+        <div className="h-[74.813rem] bg-white text-black flex flex-col space-y-4 sm:h-[40.5rem] sm:mx-[10.65rem] sm:flex-row sm:items-start">
           <img
             src={image1}
             alt="image1"
-            className="h-[527px] object-cover rounded-[5px]"
+            className="h-[33.125rem] w-[21.25rem] object-cover mobile-rounded laptop-rounded sm:w-[47.5rem]"
           />
-          <h2
-            className="text-2xl"
-            style={{
-              fontFamily: "'Roboto', sans-serif",
-            }}
-          >
-            To the Moon and Beyond
-          </h2>
-          <h1
-            className="text-5xl font-semibold text-[#0b013c] text-center"
-            style={{
-              fontFamily: "'Roboto', sans-serif",
-            }}
-          >
-            WELCOME ABOARD
-          </h1>
-          <div className="w-16 h-3 bg-[#f8cb8a]"></div>
-          <p className="text-center italic text-gray-500">
-            Space Center Houston has welcomed nearly 20 million visitors and
-            currently hosts more than 1 million visitors annually in its
-            250,000-square-foot educational complex. Space Center Houston has a
-            $73 million impact on the greater Houston economy, according to a
-            2016 economic study by Jason Murasko and Stephen Cotten, associate
-            professors of economics at the University of Houston – Clear Lake.
-          </p>
+          <div className="">
+            <h2
+              className="text-2xl"
+              style={{
+                fontFamily: "'Roboto', sans-serif",
+              }}
+            >
+              To the Moon and Beyond
+            </h2>
+            <h1
+              className="text-5xl font-semibold text-[#0b013c]"
+              style={{
+                fontFamily: "'Roboto', sans-serif",
+              }}
+            >
+              WELCOME ABOARD
+            </h1>
+            <div className="w-16 h-3 bg-[#f8cb8a]"></div>
+            <p className="text-center italic text-gray-500">
+              Space Center Houston has welcomed nearly 20 million visitors and
+              currently hosts more than 1 million visitors annually in its
+              250,000-square-foot educational complex. Space Center Houston has
+              a $73 million impact on the greater Houston economy, according to
+              a 2016 economic study by Jason Murasko and Stephen Cotten,
+              associate professors of economics at the University of Houston –
+              Clear Lake.
+            </p>
+          </div>
         </div>
-      </Section> */}
+      </Section>
 
-        {/* <Section id="section4">
+      {/* <Section id="section4">
           <div className="h-[700px] flex flex-col items-center justify-center mx-[50px] my-[50px] space-y-7 bg-white">
             <img
               src={image2}
